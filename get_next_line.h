@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dpetrosy <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dapetros <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/22 23:45:37 by dpetrosy          #+#    #+#             */
-/*   Updated: 2022/04/22 23:53:29 by dpetrosy         ###   ########.fr       */
+/*   Created: 2024/01/26 00:37:10 by dapetros          #+#    #+#             */
+/*   Updated: 2024/01/26 01:35:38 by dapetros         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,18 @@
 # define GET_NEXT_LINE_H
 
 # include <fcntl.h>
-# include <limits.h>
 # include <unistd.h>
 # include <stdlib.h>
 
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+
 char	*get_next_line(int fd);
-char	*get_joined_buffer(char *buffer, int fd);
-char	*ft_strdup(char *s1);
-char	*ft_strjoin(char *s1, char *s2);
-char	*ft_substr(char *s, unsigned int start, size_t len);
-char	*ft_strchr(char *s, int c);
-size_t	ft_strlen(char *s);
+size_t	ft_strlen(const char *s);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strdup(const char *s1);
+char	*ft_strjoin(char *s1, const char *s2);
+char	*ft_substr(const char *s, unsigned int start, size_t len);
 
 #endif  /* GET_NEXT_LINE_H */
