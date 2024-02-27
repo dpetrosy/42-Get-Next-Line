@@ -39,9 +39,9 @@
 For detailed information, refer to the [**subject of this project**](README_files/gnl_subject.pdf).
 
 	🚀 TLDR: This task is crucial to understand for a future programmer, since much of the 
-           time is based on manipulating files for data management and persistence.
-           This project consists of coding a function that returns one line at a time 
-           from a text file.
+		 time is based on manipulating files for data management and persistence.
+		 This project consists of coding a function that returns one line at a time 
+		 from a text file.
 
 ## 👨‍💻 Usage
 ### Requirements
